@@ -101,6 +101,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             val latLng = LatLng(it.latitude, it.longitude)
 
             mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 15.5f))
+            mMap.addMarker(MarkerOptions().position(latLng).title("Sua localização"))
 
         }
 
